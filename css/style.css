@@ -1,74 +1,88 @@
 @font-face {
 	font-family: 'gilroy-thin';
-	src: url('../fonts/gilroy-thin.eot');
-  src: local('☺'), url('../fonts/gilroy-thin.woff') format('woff'), 
-  url('../fonts/gilroy-thin.ttf') format('truetype'), 
-  url('../fonts/gilroy-thin.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-thin.woff') format('woff');
 	font-weight: 100;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-ultralight';
-	src: url('../fonts/gilroy-ultralight.eot');
-  src: local('☺'), url('../fonts/gilroy-ultralight.woff') format('woff'), 
-  url('../fonts/gilroy-ultralight.ttf') format('truetype'), 
-  url('../fonts/gilroy-ultralight.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-ultralight.woff') format('woff');
 	font-weight: 200;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-regular';
-	src: url('../fonts/gilroy-regular.eot');
-  src: local('☺'), url('../fonts/gilroy-regular.woff') format('woff'), 
-  url('../fonts/gilroy-regular.ttf') format('truetype'), 
-  url('../fonts/gilroy-regular.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-regular.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-medium';
-	src: url('../fonts/gilroy-medium.eot');
-  src: local('☺'), url('../fonts/gilroy-medium.woff') format('woff'), 
-  url('../fonts/gilroy-medium.ttf') format('truetype'), 
-  url('../fonts/gilroy-medium.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-medium.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-semibold';
-	src: url('../fonts/gilroy-semibold.eot');
-  src: local('☺'), url('../fonts/gilroy-semibold.woff') format('woff'), 
-  url('../fonts/gilroy-semibold.ttf') format('truetype'), 
-  url('../fonts/gilroy-semibold.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-semibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-bold';
-	src: url('../fonts/gilroy-bold.eot');
-  src: local('☺'), url('../fonts/gilroy-bold.woff') format('woff'), 
-  url('../fonts/gilroy-bold.ttf') format('truetype'), 
-  url('../fonts/gilroy-bold.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-bold.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-heavy';
-	src: url('../fonts/gilroy-heavy.eot');
-  src: local('☺'), url('../fonts/gilroy-heavy.woff') format('woff'), 
-  url('../fonts/gilroy-heavy.ttf') format('truetype'), 
-  url('../fonts/gilroy-heavy.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-heavy.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'gilroy-black';
-	src: url('../fonts/gilroy-black.eot');
-  src: local('☺'), url('../fonts/gilroy-black.woff') format('woff'), 
-  url('../fonts/gilroy-black.ttf') format('truetype'), 
-  url('../fonts/gilroy-black.svg') format('svg');
+  src: local('☺'), url('../fonts/gilroy-black.woff') format('woff');
 	font-weight: 900;
 	font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.woff?o5tmjl') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook1:before {
+  content: "\e900";
+}
+.icon-instagram:before {
+  content: "\e901";
+}
+.icon-pinterest:before {
+  content: "\e902";
+}
+.icon-twitter1:before {
+  content: "\e903";
+}
+.icon-youtube:before {
+  content: "\e904";
 }
 *{
 	box-sizing: border-box;
@@ -843,30 +857,43 @@ img{
   height: 2px; 
   border: none;
   background-color: grey;
-  margin: 0 85px 56px;
+  margin: 0 85px 66px;
 }
 .pictures{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  height: 40px;
 }
 .facebook{
-  margin-right: 25px;
+  position: relative;
+  border-radius: 50%;
+  border: none;
   cursor: pointer;
-}
-.logo-pictures{
-  border-radius:50%;
-  max-width: 70px;
+  padding: 8px 18px;
+  margin-right: 28px;
 }
 .facebook:hover{
   box-shadow: 4px 4px 5px 0 #000;
-  border-radius:50%;
   border: none;
 }
 .facebook:focus{
-  box-shadow: 4px 4px 5px 0 rgb(214, 52, 255);
-  border-radius:50%;
-  border: none;
+  box-shadow: 4px 4px 5px 0 rgb(230, 130, 255);
+  border: none;  
+}
+.facebook:active{
+  border: none;  
+  background: rgb(255, 195, 82);
+}
+.sh-1{
+    position: absolute;
+  color: transparent;  
+  background: black;
+  background-clip: text;
+  -webkit-background-clip: text;  
+  font-size:40px;
+  left: calc(50% - 20px);
+  bottom: calc(50% - 20px);  
 }
 .last-text{
   display: flex;
@@ -879,7 +906,7 @@ img{
   line-height: 20px;
   text-align: center;
   color: #000;
-  padding: 63px 14px 35px 0;
+  padding: 53px 14px 35px 0;
 }
 .p-0{
   padding-right: 0;
@@ -910,8 +937,5 @@ img{
   }
   .link-footer{
     padding-left: 15px;
-  }
-  .pictures{
-    padding-left: 30px;
   }
 }
